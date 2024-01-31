@@ -16,7 +16,7 @@ class Post extends Model
     'body',
     ];
 
-    public function getPaginateByLimit(int $limit_count = 99)
+    public function getPaginateByLimit(int $limit_count = 98)
     {
         return $this->orderBy('updated_at', 'DESC')->paginate($limit_count);
     }
